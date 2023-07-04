@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Positions</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            outline: none;
+            box-sizing: border-box;
+        }
+
+        header{
+            background-color: orangered;
+            height: 10vh;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            z-index: 100;
+        }
+
+        main{
+            background-color: greenyellow;
+            width: 50vw;
+            height: 200vh;
+            position: relative;
+            left: 20%;
+            padding: 100px 30px;
+            font-size: 20px;
+        }
+
+        .aside-container{
+            width: 100%;
+            height: 150vh;
+            position: absolute;
+            top: 0;
+        }
+
+        aside{
+            height: 600px;
+            width: 20vw;
+            background-color: cyan;
+            position: sticky;
+            top: 150px;
+            float: right;
+        }
+
+        footer{
+            width: 100%;
+            height: 20vh;
+            background-color: aquamarine;
+        }
+
+        .message{
+            height: 80px;
+            width: 80px;
+            background-color: blueviolet;
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            border-radius: 50%;
+        }
+
+
+    </style>
+</head>
+<body>
+    <header>
+    </header>
+
+    <main>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor tempora omnis qui consequuntur non, inventore sint dignissimos minima odio, amet minus maxime. Culpa ab sit debitis ratione repellendus mollitia vero illum eius. Pariatur, vero quod sequi sint mollitia, optio quibusdam assumenda alias ducimus accusamus error vitae, hic esse in! Quidem nisi pariatur reiciendis quam ipsum cumque, deleniti consequuntur alias impedit. Sint odio animi, vel reprehenderit non laboriosam iste excepturi dolorem corporis deserunt natus hic iure voluptatum numquam asperiores ea nemo corrupti consectetur? In, repudiandae. Ratione qui ipsam, facere quis quae aliquid accusamus possimus commodi iste doloribus totam autem consequatur? Aperiam? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt aperiam illo odio dolorum corrupti dolorem fugit? Voluptas voluptatem eveniet, nihil exercitationem quasi, fugit debitis nisi aperiam ducimus id et facere ab laborum sapiente consequatur totam sed beatae ex, magnam minima tenetur ipsa placeat eos. Eligendi officia iure dicta, perspiciatis quas et, deserunt error molestiae debitis corporis maiores. Excepturi fuga veritatis itaque ullam unde eos aliquid sunt quis suscipit nisi ipsa magnam, impedit, repellat, in possimus earum placeat nam natus nemo saepe eius! Voluptatum natus mollitia iste molestias officiis quasi eaque optio aliquam quia dolore voluptates distinctio magnam ut facilis nobis, vel vero! Voluptatibus deleniti autem labore temporibus odit provident quasi a nostrum, mollitia fugit, aliquid qui aut. Minima exercitationem ea odio. Vel provident possimus alias facere illum unde debitis natus. Commodi corporis porro blanditiis vero minus, tempora excepturi voluptatum eos consequatur aut ex nam sed illo modi odit delectus consectetur nisi error, inventore, accusamus quis rerum! Quibusdam vel dolorem sequi. Debitis ratione nam, maxime modi dolorem veniam animi repellendus a libero ad voluptate neque qui, ea, numquam vel dolores officia. Ducimus quae harum nulla ipsum consequuntur veniam impedit sequi blanditiis officia tempore, enim eligendi dolorem quasi omnis, repellendus aperiam, quod ratione necessitatibus ut veritatis non eos? Impedit molestias totam in, eius debitis dolores! Maiores cum magni hic iste necessitatibus! Consectetur illo veritatis illum ea aut, natus mollitia quae, libero tempore unde excepturi error totam, officiis reprehenderit esse. Nesciunt sit dolorem, magni eos facilis commodi odio obcaecati nemo corporis possimus quo, ab perspiciatis dignissimos dolores molestiae impedit repellendus incidunt a facere. Consequatur, quo expedita. Repudiandae neque ut voluptates fugiat pariatur? Enim laborum maxime adipisci possimus amet inventore accusantium, modi ab suscipit sapiente sit impedit nulla cum minus aperiam sed veniam. Amet quam maiores sapiente quod laboriosam esse id voluptate dignissimos molestiae.</p>
+    </main>
+
+    <div class="aside-container">
+        <aside>
+        </aside>
+    </div>
+
+    <footer>
+    </footer>
+
+    <div class="message">
+    </div>
+
+</body>
+</html>

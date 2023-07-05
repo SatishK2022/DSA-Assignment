@@ -17,83 +17,30 @@
        <form id="form" class="form">
             <div class="form-control">
                 <label for="">Username</label>
-                <input type="text" name="" id="username" placeholder="Enter your Full Name" autocomplete="off">
-                <i class="fa-solid fa-circle-check"></i>
-                <i class="fa-solid fa-circle-exclamation"></i>
-                <small>Error Message</small>
+                <input type="text" name="" id="username" required placeholder="Enter your Full Name" autocomplete="off">
             </div>
             <div class="form-control">
                 <label for="">Email</label>
-                <input type="email" name="" id="email" placeholder="Enter your Email" autocomplete="off">
-                <i class="fa-solid fa-circle-check"></i>
-                <i class="fa-solid fa-circle-exclamation"></i>
-                <small>Error Message</small>
+                <input type="email" name="" id="email" required placeholder="Enter your Email" autocomplete="off">
             </div>
             <div class="form-control">
                 <label for="">Phone No</label>
-                <input type="number" name="" id="phoneno" placeholder="Enter your Phone No" autocomplete="off">
-                <i class="fa-solid fa-circle-check"></i>
-                <i class="fa-solid fa-circle-exclamation"></i>
-                <small>Error Message</small>
+                <input type="number" name="" id="phoneno" required pattern="/(7|8|9)\d{9}/" placeholder="Enter your Phone No" autocomplete="off">
+            </div>
+            <div class="form-control">
+                <label for="">Age</label>
+                <input type="number" name="" id="age" placeholder="Enter your Age">
             </div>
             <div class="form-control">
                 <label for="">Password</label>
-                <input type="password" name="" id="password" placeholder="Enter your Password">
-                <i class="fa-solid fa-circle-check"></i>
-                <i class="fa-solid fa-circle-exclamation"></i>
-                <small>Error Message</small>
+                <input type="password" name="" id="password" pattern="^[a-zA-Z0-9]{8,}$" required placeholder="Enter your Password">
             </div>
-            <div class="form-control">
-                <label for="">Confirm Password</label>
-                <input type="password" name="" id="cnfpassword" placeholder="Enter your Password again">
-                <i class="fa-solid fa-circle-check"></i>
-                <i class="fa-solid fa-circle-exclamation"></i>
-                <small>Error Message</small>
+            <div class="form-control color-picker">
+                <label for="">Color</label>
+                <input type="color" name="" id="color" required>
             </div>
             <input type="submit" value="Submit" class="btn">
        </form>
     </div>
 </body>
-<script>
-    const form = document.getElementById('form');
-    const username = document.getElementById('username');
-    const email = document.getElementById('email');
-    const phoneno = document.getElementById('phoneno');
-    const password = document.getElementById('password');
-    const cnfpassword = document.getElementById('cnfpassword');
-    
-    // Add Event
-    form.addEventListener('submit', () => {
-        event.preventDefault();
-        validate();
-    })
-    
-    // Defint the validate function
-    const validate = () => {
-        const username = username.value.trim();
-        const email = email.value.trim();
-        const phoneno = phoneno.value.trim();
-        const password = password.value.trim();
-        const cnfpassword = cnfpassword.value.trim();
-
-        // validate for username
-        if (username === "") {
-            setErrorMsg(username, "username cannot be blank");
-        }else if(username.length <= 2){
-            setErrorMsg(username, "username should have min 3 char");
-        } else{
-            setSuccessMsg(username);
-        }
-
-        // validate for email
-        if (email === "") {
-            setErrorMsg(email, "email cannot be blank");
-        }else if(email.length <= 2){
-            setErrorMsg(email, "email should have min 3 char");
-        } else{
-            setSuccessMsg(email);
-        }
-
-    }
-</script>
 </html>
